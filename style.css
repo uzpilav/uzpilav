@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Carrois Gothic', sans-serif;
+}
+
+
+header{
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(11.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position:center;
+  background-blend-mode: multiply;
+
+}
+
+ul{
+  list-style-type: none;
+  float: right;
+  margin-top: 25px;
+}
+
+ul li{
+  display: inline-block;
+
+}
+ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.6s ease;
+}
+
+ul li a:hover{
+  background-color: #fff;
+  color: black;
+}
+
+ul li.active a{
+  background-color: #fff;
+  color: black;
+}
+.logo img{
+  float: left;
+  width: 200px;
+  height: auto;
+  padding: 5px 20px;
+
+}
+
+.main{
+  max-width: 1200px;
+  margin: auto;
+}
+.title{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.title h1{
+  color: #fff;
+  font-size: 70px;
+}
+
+.button{
+  position: absolute;
+  top:70%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.btn{
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.6s ease;
+}
+
+.btn:hover{
+  background-color: #fff;
+  color: black;
+}
+
+#bottom{
+  padding: 100px 20%;
+  width: 60%;
+  float: left;
+  background-color: #f6f6f6;
+  border-top: 1px solid silver;
+  color: #484848;
+  font-size: 1.3em;
+}
+#bottom .img {
+  float: left;
+  width: 55%;
+  margin-right: 5%;
+  margin-top: 50px;
+
+
+}
+
+#bottom .img:nth-child(odd){
+  margin-left: 38%;
+}
+
+#bottom img {
+  background: #fafafa;
+  padding: 5px;
+  border: 2px solid silver;
+  float: left;
+  width: 100%;
+  max-width: 500px;
+}
+#bottom span{
+  float: left;
+  width: 100%;
+  font-size: 1em;
+  margin-top: 10px;
+  color: green;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#menu{
+  padding: 100px 20%;
+  width: 60%;
+  float: left;
+  background-color:black;
+  border-top: 1px solid silver;
+  color: #E8E8E8;
+  font-size: 1.3em;
+  font-family:'Comfortaa', cursive;
+}
+
+#menu .img {
+  float: left;
+  width: 60%;
+  margin-right: 10%;
+  margin-top: 40px;
+ /* Отступ справа */
+    margin-bottom: 10px;
+    padding: 15px;
+}
+#bottom .img:nth-child(odd){
+  margin-left: 58%;
+}
+
+#menu img {
+  padding: 2px;
+  border: 1px solid silver;
+  float: left;
+  width: 100%;
+  max-width: 1000px;
+margin-top:1px;
+min-width: 300px;
+
+}
+#menu span{
+  float: left;
+  width: 100%;
+  font-size: 1em;
+  margin-top: 10px;
+  color:#F3F204;
+  text-align: center;
+  font-family:'Comfortaa', cursive;
+}
+
+
+
+.container{
+  width: 400px;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0.5)), url(с2.jpg) ;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+  color: white;
+font-family: 'Comfortaa', cursive;
+}
+
+
+.container .box{
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+}
+@smedia (min-width: 550px) {
+  div{
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  h1, h2, h3, h4{
+    font-size: 1.75rem;
+  }
+}
+
+.container .box .icon .fa-map-marker-alt {
+  font-size: 80px;
+  cursor: pointer;
+}
+
+.container .box .icon .fa-phone-alt {
+  font-size: 80px;
+  cursor: pointer;
+}
+
+.container .box .icon .fa-envelope-square {
+  font-size: 80px;
+  cursor: pointer;
+}
+.container .box .icon h3,
+.container .box .icon h4{
+
+  position: relative;
+  overflow: hidden;
+  font-weight: 400px;
+  margin: 0;
+  padding: 15px 8px;
+  font-size: 24px;
+  transition-delay: 0.333s;
+  font-family: 'Comfortaa', cursive;
+}
+.container .box .icon h4{
+  font-weight: 600;
+  margin: 5px 0;
+  font-style: 30px;
+}
+.container .box .icon h3:before,
+.container .box .icon h4:before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background: #00bcd4;
+  transition: 1s;
+}
+
+.container .box .icon h4:before{
+  left: initial;
+  right: 100%;
+  background: #9c27b0;
+}
+.container .box .fa:hover ~ h3:before
+
+{
+  left: -100%;
+}
+.container .box .fa:hover ~ h4:before
+{
+  left: initial;
+  right: 100%;
+}
+#contact{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+@media screen and  (max-width:99%) {
+{
+  width: 100%;
+}
+}
